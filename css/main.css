@@ -24,10 +24,9 @@ body{
 .form__label{
   width: 20%;
   position: absolute;
-  right: 320px;
+  right: 270px;
   top: 13px;
   font-size: 20px;
-  transition: all 0.4s ease-in-out 0.3s;
 }
 .form__input{
   display: block;
@@ -38,20 +37,20 @@ body{
   outline: none;
   border: 3px solid #909090;
 }
-.form__input:focus{
-  border: 3px solid skyblue;
-}
-.form__input:focus ~ .form__label{
-  transform: translateX(50px);
-  color: skyblue;  
+
+.message{
+  width: 100%;
+  position: absolute;
+  bottom: -25px;
+  left: 370px;
 }
 .form__btn{
-  width: 80px;
+  width: 90px;
   background-color: black;
   color: #fff;
   border-radius: 8px;
   outline: none;
-  border: none;
+  padding: 20px;
 }
 .form__btn:hover{
   background-color: skyblue;
@@ -79,4 +78,44 @@ body{
   margin-top: 8px;
   margin-bottom: 8px;
   text-align: center;
+}
+.inp-error{
+  border: 3px solid red;
+  animation: example 0.1s ease-in-out 0.3s;
+}
+.label-error{
+  color: red;
+  animation: example 0.1s ease-in-out 0.3s;
+}
+.inp-success{
+  border: 3px solid green;
+}
+.label-success{
+  color: green;
+}
+.error{
+  display: block;
+  font-style: 20px;
+  color: red;
+  text-transform: capitalize;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 1.2px;
+  animation: example 0.1s ease-in-out 0.3s;
+}
+
+@keyframes example {
+  from {
+    transform: translateX(-3.5px);
+  }
+  to {
+    transform: translateX(3.5px);
+  }
+}
+.succes{
+  display: block;
+  font-style: 20px;
+  color: green;
+  text-transform: capitalize;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 1.2px;
 }

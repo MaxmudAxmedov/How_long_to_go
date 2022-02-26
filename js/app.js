@@ -61,7 +61,6 @@ elForm = addEventListener("submit", testerFunc);
 
 function myError() {
   document.getElementById("my_audio-error").play(); 
-  $("#my_audio-error").get(0).play();
 }
 
 
